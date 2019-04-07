@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/shrewfallout/Projects/Python tutorial/ToDoList/venvMac"
+VIRTUAL_ENV="/Users/shrewfallout/Projects/Python tutorial/ToDoList_python/venvMac"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

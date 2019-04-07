@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/shrewfallout/Projects/Python tutorial/ToDoList/venvMac"
+set -gx VIRTUAL_ENV "/Users/shrewfallout/Projects/Python tutorial/ToDoList_python/venvMac"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
