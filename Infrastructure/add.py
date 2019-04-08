@@ -20,9 +20,3 @@ def addTask(taskModels):
 	printColor(text="Set start day of task: ", color=Color.BLUE)
 	dateStart = input("Start day (dd-mm-yyyy): ")
 	taskModels.append(TaskModel(description=description, startDate=dateStart))
-
-
-def addFakeData(taskModels):
-	taskModels.append(TaskModel(description="Wyjazd nad morze", startDate="11-07-2019"))
-	taskModels.append(TaskModel(description="Wyjście do pracy", startDate="15-03-2019"))
-	taskModels.append(TaskModel(description="Wspaniałe wakacje z Karolinką nad morzem", startDate="15-03-2019"))

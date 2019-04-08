@@ -26,7 +26,7 @@ def showTasks(taskModels):
 			printColor(f"{index} | {taskLine[0]} | {task.StartDate}" + " " * 10 + "|")
 			printColor(f"  | {taskLine[1]}" + " " * space + " | " + " " * 20 + "|")
 			if lengthTask != index + 1:
-				printColor(text="." * 44, color=Color.BLUE)
+				printColor(text="." * numberAsterix, color=Color.BLUE)
 		else:
 			space = 20 - len(taskLine[0])
 			printColor(f"{index} | {taskLine[0]}" + " " * space + f" | {task.StartDate}" + " " * 10 + "|")
@@ -44,5 +44,7 @@ def showMenu():
 	printColor(text="Add task: add", color=Color.GREEN)
 	printColor(text="Show tasks: show", color=Color.GREEN)
 	printColor(text="Remove task: remove", color=Color.GREEN)
+	printColor(text="Save tasks: save", color=Color.GREEN)
+	printColor(text="Load tasks: load", color=Color.GREEN)
 	printColor(text="..............", color=Color.RED)
 	printColor("")
