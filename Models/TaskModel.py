@@ -1,7 +1,26 @@
+import datetime
+
 class TaskModel:
 	def __init__(self, description, startDate):
 		self.Description = description
+		startDate = startDate.split("-")
+		startDate = datetime.datetime(int(startDate[2]),
+									  int(startDate[1]),
+									  int(startDate[0]))
 		self.StartDate = startDate
+
+	def addEndDate(self, endDate):
+		self.EndDate = endDate
+		return self
+
+	def setAllDay(self, allday):
+		self.AllDay = allday
+		return self
+
+	def setImportant(self, important):
+		self.Important = important
+		return self
+
 	EndDate = None
 	AllDay = False
 	Important = False

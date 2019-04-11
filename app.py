@@ -1,6 +1,6 @@
 import os
 from Infrastructure.add import addTask
-from Infrastructure.show import showTasks, showMenu
+from Infrastructure.show import showTasks, showMenu, showCurrentTask
 from Infrastructure.remove import removeTask
 from Infrastructure.save import saveTasks
 from Infrastructure.load import loadTask
@@ -13,6 +13,7 @@ addFakeData(taskModels)
 
 while True:
 	os.system("clear")
+	showCurrentTask(taskModels)
 	showMenu()
 
 	command = input("command: ").lower()
